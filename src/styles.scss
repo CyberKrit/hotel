@@ -1,1 +1,189 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-block}progress,sub,sup{vertical-align:baseline}[type=checkbox],[type=radio],legend{box-sizing:border-box;padding:0}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{color:inherit;display:table;max-width:100%;white-space:normal}textarea{overflow:auto}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}[hidden],template{display:none}
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url('assets/fonts/proximanova-light.eot');
+  src: url('assets/fonts/proximanova-light.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/proximanova-light.woff2') format('woff2'),
+       url('assets/fonts/proximanova-light.woff') format('woff'),
+       url('assets/fonts/proximanova-light.svg#proxima_novalight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url('assets/fonts/proximanova-regular.eot');
+  src: url('assets/fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/proximanova-regular.woff2') format('woff2'),
+       url('assets/fonts/proximanova-regular.woff') format('woff'),
+       url('assets/fonts/proximanova-regular.svg#proxima_novaregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_novasemibold';
+  src: url('assets/fonts/proximanova-semibold.eot');
+  src: url('assets/fonts/proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/proximanova-semibold.woff2') format('woff2'),
+       url('assets/fonts/proximanova-semibold.woff') format('woff'),
+       url('assets/fonts/proximanova-semibold.svg#proxima_novasemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url('assets/fonts/proximanova-bold.eot');
+  src: url('assets/fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+       url('assets/fonts/proximanova-bold.woff2') format('woff2'),
+       url('assets/fonts/proximanova-bold.woff') format('woff'),
+       url('assets/fonts/proximanova-bold.svg#proxima_nova_rgbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  -webkit-text-shadow: none;
+ 	   -moz-text-shadow: none;
+ 				  text-shadow: none;
+}
+::selection {
+	background: #b3d4fc;
+  -webkit-text-shadow: none;
+ 	   -moz-text-shadow: none;
+ 				  text-shadow: none;
+}
+html {
+	font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  	 -moz-box-sizing: border-box;
+  				box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  	 -moz-box-sizing: inherit;
+  				box-sizing: inherit;
+}
+body {
+	min-width: 24rem;
+  padding: 0;
+  margin: 0;
+  font-family: "proxima_novaregular", sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.4;
+	color: #222;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+}
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+}
+ul {
+  list-style: none;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+img[width] {
+	width: auto !important;
+}
+img[height] {
+	height: auto !important;
+}
+a {
+	text-decoration: none;
+	-webkit-transition: all .14s ease-in-out;
+		 -moz-transition: all .14s ease-in-out;
+		  -ms-transition: all .14s ease-in-out;
+			 -o-transition: all .14s ease-in-out;
+					transition: all .14s ease-in-out;
+}
+a:not([href]) {
+	color: inherit;
+}
+
+/* 
+ * form-control
+ */
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: inherit;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: inherit;
+	opacity: 1;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: inherit; 
+}
+input::placeholder,
+textarea::placeholder {
+  color: inherit; 
+}
+input,
+select,
+textarea {
+	display: block;
+  width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	border: 0;
+}
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"] {
+	display: inline-block;
+	width: auto;
+	line-height: 1;
+  border: 0;
+	-webkit-transition: all .14s ease-in-out;
+		 -moz-transition: all .14s ease-in-out;
+		  -ms-transition: all .14s ease-in-out;
+			 -o-transition: all .14s ease-in-out;
+					transition: all .14s ease-in-out;
+}
+textarea {
+	resize: vertical;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "software",
+  "name": "GreenTeaResort",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,8 +8,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "pack": "electron-packager . 'Green Tea Resort' --out ~/Desktop/soft --overwrite"
   },
+  "main": "electron.js",
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.2.4",
@@ -21,7 +23,14 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
     "core-js": "^2.4.1",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "localforage": "^1.5.5",
+    "moment": "^2.20.1",
+    "mongoose": "^4.13.9",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -33,6 +42,8 @@
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
     "codelyzer": "~3.1.1",
+    "electron": "^1.7.10",
+    "electron-packager": "^10.1.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
     "karma": "~1.7.0",
